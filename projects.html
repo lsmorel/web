@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="mainstylesheet.css">
+    <link rel="stylesheet" href="projects.css">
+    <link rel="icon" type="image/png" href="xp_round_icon.png">
+
+    <title>Projects</title>
+
+    
+    <!-- hosts nav functions and etc  -->
+    <script src="webfunctions.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    
+</head>
+
+<body>
+
+    <!-- Top nav -->
+    <nav id="navbar">
+        <div class="logo">
+            <svg onclick="window.location.href='home.html'" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="100" cy="100" r="95"/>
+                <text x="50%" y="50%" dy=".1em">
+                    LSM
+                </text>
+            </svg>
+        </div>
+        <div class="nav-items">
+            <a href="home.html">HOME</a>
+            <a class="active" href="projects.html">PROJECTS</a>
+            <a href="artwork.html">ARTWORK</a>
+
+            <span class="material-symbols-outlined menu_icon" onclick="toggleMenu()">menu</span>
+        </div>
+    </nav>
+
+    <div class="body_content">
+
+        <div id="dropdownID" class="nav-dropdown">
+            <a href="home.html">HOME</a>
+            <a class="active" href="projects.html">PROJECTS</a>
+            <a href="artwork.html">ARTWORK</a>
+        </div>
+
+
+        <div class="body_titles">
+            <p>Projects</p>
+        </div>
+
+        <div class="main_container">
+
+        <div class="body_container">
+            <div class="body_div" data-aos="fade-up">
+                <img src="projects_images/website.png">
+            </div>
+            <div class="body_div" data-aos="fade-up">
+                <h1>The Website</h1>
+                <p class="body_text">This website was created to showcase some of my programming skills and to serve as a personal 
+                    resume; highlighting who I am as both an engineer and individual. </p>
+                    <p class="body_text">My goal is to present myself as a potential 
+                    employee and peer to those involved in building high-quality software across all areas of the tech industry.</p>
+                <button id="eggButtonId" class="body_button">Find the Easter Egg?</button>
+                <p id="eggTextId" style="display: none; position: absolute; text-align: center; line-height: 1.1;">There's an easter egg 
+                    somewhere on my site that when clicked will spin really fast. Try to find it... or not &#128579;</p>
+
+            </div>
+
+        </div>
+
+        <div class="body_container" style="flex-direction: row-reverse;">
+            <div class="body_div" style="-webkit-box-shadow: 0 0 10px rgba(134, 134, 134, 0.39); box-shadow: 0 0 10px rgba(134, 134, 134, 0.39);" data-aos="fade-up">
+                <img src="projects_images/Albacore Poster.jpg">
+            </div>
+            <div class="body_div" data-aos="fade-up">
+                <h1>Albacore 2.0: A Virtual Experience</h1>
+                <p class="body_text">I worked with a team in an Agile environment on a third-year submarine virtual reality 
+                    project. We worked in sprints and documented our progress and tasks on an issue board along the way. The 
+                    project concluded with a presentation covering our deliverables and findings from a client survey.</p>
+                <button class="body_button" onclick="window.open(`projects_images/Albacore_Poster.pdf`, '_blank')">Open
+                    Poster</button>
+            </div>
+        </div>
+
+        <div class="body_container">
+            <div class="body_div" data-aos="fade-up">
+                <img style="border-radius: 20%;" src="projects_images/app.png">
+            </div>
+            <div class="body_div" data-aos="fade-up">
+                <h1>Xplore App</h1>
+                <p class="body_text">Currently in development is a mobile travel application which aims to reduce the
+                    stress of planning itineraries and simplify the process of organizing travel plans. I will update information on this application
+                    as development progresses.</p>
+            </div>
+        </div>
+
+        </div>
+
+        <div class="body_titles">
+            <p>Some Other Things</p>
+        </div>
+
+        <div class="body_container_other">
+            <div style="flex: 1 1 45%;" data-aos="fade-up">
+                <div style="position: relative;">
+                    <span id="circle_id" class="click_animation"></span>
+                    <video src="projects_images/donuts.mp4" muted loop playsinline></video>
+                </div>
+                <div>
+                    <h1>Blender</h1>
+                    <p class="body_text">This donuts rendering scene was created using a 5-hour <a class="links"
+                            href="https://youtu.be/4haAdmHqGOw">blender tutorial</a>
+                        by Blender Guru. The course goes over modeling techniques, texturing, lighting, rendering
+                        and more. In the near future I hope to expand my 3D portfolio with custom made models of objects and
+                        people.</p>
+                </div>
+            </div>
+            
+            <div style="flex: 1 1 45%;" data-aos="fade-up">
+                <div>
+                    <img style="border-radius: 20px; cursor: default;" src="projects_images/alicia.jpg">
+                </div>
+        
+                <div>
+                    <h1>Art</h1>
+                    <p class="body_text">I enjoy drawing and painting, while experimenting with different styles. 
+                        Feel free to check out more of my work <a class="links" href="artwork.html">here.</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+       
+        <div class="body_titles">
+            <p>Languages</p>
+        </div>
+
+        <div id="languages" class="languages" data-aos="fade-up">
+            <div><img title="C" class="lang_circles" src="projects_images/languages/C.png" alt="placeholder"></div>
+            <div><img title="C Sharp" class="lang_circles" src="projects_images/languages/C_sharp.png" alt="placeholder">
+            </div>
+            <div><img title="C++" class="lang_circles" src="projects_images/languages/C++.png" alt="placeholder"></div>
+            <div><img title="Java" class="lang_circles" src="projects_images/languages/Java.png" alt="placeholder"></div>
+            <div><img title="Python" class="lang_circles" src="projects_images/languages/Python.png" alt="placeholder">
+            </div>
+            <div><img title="HTML" class="lang_circles" src="projects_images/languages/HTML5.png" alt="placeholder"></div>
+            <div><img title="CSS" class="lang_circles" src="projects_images/languages/CSS.png" alt="placeholder"></div>
+            <div><img title="JavaScript" class="lang_circles" src="projects_images/languages/JavaScript.png"
+                    alt="placeholder"></div>
+            <div><img title="SQL" class="lang_circles" src="projects_images/languages/SQL.png" alt="placeholder"></div>
+        </div>
+
+    </div>
+
+    <div class="footer">
+        <div class="footer_content">
+            <a href="home.html">Home</a>
+            <a href="projects.html">Projects</a>
+            <a href="artwork.html">Artwork</a>
+            <a href="https://www.linkedin.com/in/luis-s-morel/">LinkedIn</a>
+        </div>
+        <p class="copyright" title="That's me!">© 2025 Luis S. Morel</p>
+    </div>
+
+     <script>
+
+        let d_video = document.querySelector("video");
+        d_video.currentTime = 5;
+
+        d_video.addEventListener("mouseenter", () => {
+            d_video.currentTime = 0;
+            d_video.play().catch(err => {
+                if (err.name !== "AbortError") {
+                    console.error("Video play error:", err);
+                }
+            });
+        });
+
+        d_video.addEventListener("mouseleave", () => {
+            d_video.pause();
+            d_video.currentTime = 5;
+        });
+
+               
+        let easteregg_button = document.getElementById("eggButtonId");
+        let textElement = document.getElementById("eggTextId");
+
+        easteregg_button.addEventListener("click", function() {
+            if( textElement.style.display === "none") {
+                textElement.style.display = "block";
+            } else {
+                textElement.style.display = "none";
+            }
+        });
+
+        </script>
+
+    <script>
+        AOS.init({
+            duration: 1000,
+        // });
+          once: true,
+        });
+    </script>
+
+</body>
+
+</html>

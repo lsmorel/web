@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="mainstylesheet.css">
+    <link rel="stylesheet" href="home.css">
+    <link rel="icon" type="image/png" href="xp_round_icon.png">
+
+    <title>Home</title>
+
+    
+    <!-- hosts nav functions and etc  -->
+    <script src="webfunctions.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+</head>
+
+<body>
+
+
+    <nav id="navbar">
+        <div class="logo">
+            <svg onclick="window.location.href='home.html'" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="100" cy="100" r="95" />
+                <text x="50%" y="50%" dy=".1em">
+                    LSM
+                </text>
+            </svg>
+        </div>
+        <div class="nav-items">
+            <a class="active" href="home.html">HOME</a>
+            <a href="projects.html">PROJECTS</a>
+            <a href="artwork.html">ARTWORK</a>
+
+            <span class="material-symbols-outlined menu_icon" onclick="toggleMenu()">menu</span>
+        </div>
+    </nav>
+
+    <div id="dropdownID" class="nav-dropdown">
+        <a class="active" href="home.html">HOME</a>
+        <a href="projects.html">PROJECTS</a>
+        <a href="artwork.html">ARTWORK</a>
+    </div>
+
+    <div style="max-height: 500px; overflow: hidden;">
+        <img style="width: 100%;" src="home_images/home_background.jpg">
+    </div>
+
+    <div class="div_me">
+
+        <div class="div_me_pic">
+            <img src="home_images/mypic.jpeg" alt="Me">
+        </div>
+
+        <div class="div_me_info">
+            <p class="my_name_text">Luis S. Morel</p>
+            <div class="school_text">
+                <p>University of New Hampshire '24<br>Computer Scientist</p>
+            </div>
+
+            <div class="div_buttons">
+                <button class="contact_button"
+                    onclick="window.open(`https://www.linkedin.com/in/luis-s-morel/`, '_blank')">Contact</button>
+                <button class="resume_button" onclick="window.open('lsm_resume.pdf', '_blank')">Resume</button>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="body_content">
+
+        </style>
+        <hr class="divider_big">
+        <p class="about_me_title">About Me</p>
+
+        <p class="about_me_text"> My name is Luis Morel, a recent Computer Science graduate with a military background.
+            I've created this site to showcase a bit of my coding projects, skills, interests and everything in between.
+            My background includes programming in C++, Java, JavaScript, SQL and <a class="links"
+                href="projects.html#languages">more</a>. I have
+            worked on software for a variety of platforms to include virtual reality devices, mobile phones, and desktop
+            computers.</p>
+
+        <p class="about_me_text">Feel free to explore my site to learn a bit more about me and what I've accomplished
+            through my projects, artwork, and the tools I've used to bring them to life. I'm always looking for
+            opportunities
+            to further grow and elevate not only myself but those I work with; let's build together.</p>
+
+        <hr class="divider_big">
+
+        <div class="cardviewImageRight" data-aos="fade-up">
+            <p>Now this is a story of just about how I ended up here with a look and a frown</p>
+
+            <div style="margin-inline: 5%;">
+                <img id="pic_id" class="body_image" src="home_images/babyme.jpg" alt="Baby Me">
+            </div>
+
+        </div>
+
+        <div class="line_combo">
+            <div class="right_line"></div>
+            <hr class="custom_divider">
+            <div class="left_line"></div>
+        </div>
+
+        <div class="cardviewImageLeft" data-aos="fade-up">
+
+            <p>In the DR I was born and raised then came to the US to better my days</p>
+
+            <div style="margin-inline: 5%;">
+                <img class="body_image" src="home_images/flightme.jpg" alt="Army">
+            </div>
+
+        </div>
+
+        <div class="line_combo reverse">
+            <div class="right_line"></div>
+            <hr class="custom_divider">
+            <div class="left_line"></div>
+        </div>
+
+        <div class="cardviewImageRight" data-aos="fade-up">
+            <p>I joined the army and my mom got scared and said you better go to college and park your butt on a chair
+            </p>
+
+            <div style="margin-inline: 5%;">
+                <img class="body_image" src="home_images/armyme.jpg" alt="Work">
+            </div>
+        </div>
+
+        <div class="line_combo">
+            <div class="right_line"></div>
+            <hr class="custom_divider">
+            <div class="left_line"></div>
+        </div>
+
+        <div class="cardviewImageLeft" data-aos="fade-up">
+
+            <p>Now I'm here with a BS in CS and all I need is a job and fresh air</p>
+
+            <div style="margin-inline: 5%;">
+                <img class="body_image" src="home_images/schoolme.jpg" alt="School">
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="footer">
+        <div class="footer_content">
+            <a href="home.html">Home</a>
+            <a href="projects.html">Projects</a>
+            <a href="artwork.html">Artwork</a>
+            <a href="https://www.linkedin.com/in/luis-s-morel/">LinkedIn</a>
+        </div>
+        <p class="copyright" title="That's me!">© 2025 Luis S. Morel</p>
+        <img id="img_id" class="footer_image" src="home_images/fresh_prince.png">
+    </div>
+
+    <!-- hosts dynamic lines animations and etc -->
+    <script src="home_scripts.js"></script>
+    
+    <script>
+        AOS.init({
+            duration: 1000,
+            // });
+            once: true,
+        });
+    </script>
+
+</body>
+
+</html>

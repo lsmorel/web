@@ -1,0 +1,283 @@
+/* imported Rubik Dirt font */
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Dirt&display=swap");
+
+/* NAVIGATION BAR */
+nav {
+  background-color: white;
+}
+
+nav a.active {
+  color: var(--primary-light-blue);
+}
+
+.nav-dropdown a.active {
+  color: var(--primary-light-blue);
+}
+
+/* ART IMAGES STRIP */
+.pic_list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-self: center;
+  margin-top: 100px;
+  gap: 1%;
+  width: 90%;
+  max-width: 1300px;
+  aspect-ratio: 1.9/1;
+  max-height: 600px;
+  opacity: 0;
+  animation: opa_func 1.8s forwards;
+}
+
+@keyframes opa_func {
+  100% {
+    opacity: 1;
+  }
+
+}
+
+.pic_list img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.overlay {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  background-color: rgb(57, 57, 57);
+  font-size: 16px;
+}
+
+.overlay p {
+  margin-inline: 5%;
+  font-size: var(--step--2);
+  color: white;
+}
+
+.back_class {
+  transform: rotate(5deg) !important;
+}
+
+.slider-img {
+  width: 20%;
+  border-radius: 4px;
+  position: relative;
+  overflow: hidden;
+  transition: 0.8s ease-out;
+  cursor: pointer;
+}
+
+.slider-img.active {
+  width: 100% !important;
+  border-radius: 0;
+  height: 75% !important;
+  z-index: 10;
+  animation: polaroid_border 0.6s forwards;
+}
+
+@keyframes polaroid_border {
+
+  0% {
+    border-width: 1px;
+    border-color: transparent;
+  }
+
+  100% {
+    border-width: 10px 10px 50px 10px;
+    border-color: rgb(245, 239, 229);
+    border-style: solid;
+    transform: rotate(-5deg);
+  }
+
+}
+
+.pic_list .slider-img:nth-child(2),
+.pic_list .slider-img:last-child {
+  height: 25%;
+
+}
+
+.pic_list .slider-img:nth-child(3),
+.pic_list .slider-img:nth-child(9) {
+  height: 35%;
+
+}
+
+.pic_list .slider-img:nth-child(4),
+.pic_list .slider-img:nth-child(8) {
+  height: 45%;
+
+}
+
+.pic_list .slider-img:nth-child(5),
+.pic_list .slider-img:nth-child(6),
+.pic_list .slider-img:nth-child(7) {
+  height: 55%;
+}
+
+/* BODY CONTENT */
+.title {
+  margin: 0;
+  font-size: 80px;
+  color: #21306d;
+  margin-inline: 10px;
+  font-family: "Rubik Dirt", sans-serif;
+  font-weight: 500;
+}
+
+.body_content {
+  display: block;
+  margin-top: 100px;
+  justify-self: center;
+  width: 96%;
+  height: fit-content;
+  max-width: 1200px;
+}
+
+.body_container {
+  padding-inline: 4%
+}
+
+.body_pano {
+  display: flex;
+  justify-self: center;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.body_text {
+  font-size: 18px;
+  margin: 0;
+  margin-bottom: 12.5px;
+  line-height: 1.4;
+}
+
+.image_on_right {
+  width: 40%;
+  height: 320px;
+  position: relative;
+  overflow: hidden;
+  float: right;
+  margin-left: 2%;
+  display: flex;
+  justify-content: center;
+}
+
+.image_on_left {
+  width: 40%;
+  height: 320px;
+  position: relative;
+  overflow: hidden;
+  float: left;
+  margin-right: 2%;
+  display: flex;
+  justify-content: center;
+}
+
+@media (min-width: 1000px) {
+
+  /* makes bottom of polaroid bigger on larger screens */
+  @keyframes polaroid_border {
+
+    0% {
+      border-width: 1px;
+      border-color: transparent;
+    }
+
+    100% {
+      border-width: 10px 10px 80px 10px;
+      border-color: rgb(245, 239, 229);
+      border-style: solid;
+      transform: rotate(-5deg);
+    }
+
+  }
+
+}
+
+
+/* Tablet-ish view */
+@media (max-width: 768px) {
+
+  .body_container {
+    padding-inline: 2%;
+  }
+}
+
+
+/* Mobile view */
+@media (max-width: 600px) {
+
+  .title {
+    font-size: 80px;
+  }
+
+  /* ART IMAGES STRIP */
+  .pic_list {
+    display: flex;
+    flex-direction: column;
+    padding-inline: 0;
+    padding-block: 1%;
+    aspect-ratio: 1/1;
+    gap: 4%;
+    max-height: 100%;
+  }
+
+  .slider-img {
+    height: 20% !important;
+    /* width: 100%; */
+    /* height: 50px !important; */
+  }
+
+  .slider-img.active {
+    height: 80% !important;
+    width: 80% !important;
+
+  }
+
+  .overlay p {
+    font-size: var(--step-0);
+  }
+
+  @keyframes polaroid_border {
+
+    0% {
+      border-width: 1px;
+      border-color: transparent;
+    }
+
+    100% {
+      border-width: 10px 10px 70px 10px;
+      border-color: rgb(245, 239, 229);
+      border-style: solid;
+      transform: rotate(-5deg);
+    }
+
+  }
+
+  .pic_list .slider-img {
+    width: 80%;
+  }
+
+  /* BODY CONTENT */
+  .image_on_right {
+    width: 100%;
+    height: 400px;
+    margin-bottom: 10px;
+  }
+
+  .image_on_left {
+    width: 100%;
+    height: 400px;
+    margin-bottom: 10px;
+  }
+}
