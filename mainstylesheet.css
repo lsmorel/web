@@ -359,6 +359,7 @@ nav.nav_appear {
     .footer_content {
         flex-direction: column;
         padding-inline: 40%;
+        align-items: center;
     }
 
 }
