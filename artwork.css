@@ -141,10 +141,15 @@ nav a.active {
   width: 96%;
   height: fit-content;
   max-width: 1200px;
+  margin-inline: auto;
 }
 
 .body_container {
   padding-inline: 4%
+}
+
+.body_container img {
+  object-fit: contain;
 }
 
 .body_pano {
@@ -280,4 +285,5 @@ nav a.active {
     height: 400px;
     margin-bottom: 10px;
   }
+
 }
