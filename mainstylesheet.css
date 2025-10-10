@@ -54,8 +54,6 @@ body {
 
 /* LOGO */
 .logo {
-    display: flex;
-    justify-content: center;
     width: 46px;
     margin-left: 20px;
     cursor: pointer;
