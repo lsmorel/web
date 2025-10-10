@@ -28,6 +28,7 @@ nav a.active {
   max-height: 600px;
   opacity: 0;
   animation: opa_func 1.8s forwards;
+  margin-inline: auto;
 }
 
 @keyframes opa_func {
@@ -287,3 +288,4 @@ nav a.active {
   }
 
 }
+
