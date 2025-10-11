@@ -54,8 +54,10 @@ body {
 
 /* LOGO */
 .logo {
+    display: flex;
+    justify-content: center;
     width: 46px;
-    margin-left: 20px;
+    margin: 4px 10px;
     cursor: pointer;
 }
 
@@ -334,7 +336,7 @@ nav.nav_appear {
 
     /* LOGO */
     .logo {
-        margin: 4px 10px;
+        margin-left: 10px;
     }
 
     /* NAVIGATION BAR */
