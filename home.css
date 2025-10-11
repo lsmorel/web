@@ -165,10 +165,10 @@ nav a.active {
 .body_content {
     display: block;
     justify-self: center;
-
     width: 90%;
     height: fit-content;
     max-width: 1200px;
+    margin-inline: auto;
 }
 
 .cardviewImageLeft {
