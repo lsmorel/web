@@ -187,11 +187,12 @@ nav a.active {
 .cardviewImageRight {
     display: flex;
     align-items: center;
-    justify-self: center;
-    justify-content: space-evenly;
+    /* justify-self: center; */
+    margin-inline: auto;
+    /* justify-content: space-evenly; */
     width: 90%;
     padding-block: 5%;
-    padding-inline: 10%;
+    /* padding-inline: 10%; */
     text-align: center;
     font-size: var(--step-0);
 
