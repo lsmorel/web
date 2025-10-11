@@ -74,7 +74,7 @@ body {
     letter-spacing: 4px;
 }
 
-.logo:hover {
+.logo:hover svg{
     transform: rotate(360deg);
     transition: 1s ease-out;
 }
