@@ -24,11 +24,12 @@ nav a.active {
   gap: 1%;
   width: 90%;
   max-width: 1300px;
-  aspect-ratio: 1.9/1;
+  /* aspect-ratio: 1.9/1; */
   max-height: 600px;
   opacity: 0;
   animation: opa_func 1.8s forwards;
   margin-inline: auto;
+  height: 450px;
 }
 
 @keyframes opa_func {
