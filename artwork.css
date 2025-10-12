@@ -65,6 +65,8 @@ nav a.active {
 
 .back_class {
   transform: rotate(5deg) !important;
+  -webkit-transform: rotate(5deg) translateZ(0) !important;
+  transform: rotate(5deg) translateZ(0) !important;
 }
 
 .slider-img {
