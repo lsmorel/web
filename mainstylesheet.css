@@ -55,6 +55,7 @@ body {
 /* LOGO */
 .logo {
     width: 46px;
+    height: 46px;
     margin: 4px 10px;
     cursor: pointer;
 }
@@ -94,6 +95,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: auto;
     height: 54px;
     min-width: 375px;
     position: fixed;
