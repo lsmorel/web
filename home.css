@@ -322,13 +322,13 @@ nav a.active {
     /* BODY CONTENT */
     .cardviewImageLeft {
         flex-direction: column-reverse;
-        padding: 10%;
+        padding-block: 10%;
     }
 
     .cardviewImageRight {
         flex-direction: column-reverse;
         align-items: center;
-        padding: 10%;
+        padding-block: 10%;
     }
 
     .cardviewImageLeft p {
