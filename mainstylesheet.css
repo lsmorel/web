@@ -36,6 +36,11 @@ body {
     --primary-light-grey: rgba(200, 200, 200, 0.5);
 }
 
+/* Removes blue hue for mobile taps */
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
 
 /* LINKS */
 .links {
