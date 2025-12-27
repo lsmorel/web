@@ -61,16 +61,28 @@ body {
 .logo {
     width: 46px;
     height: 46px;
-    margin: 4px 10px;
+    margin: 0 10px;
     cursor: pointer;
+}
+
+.logo svg{
+    transition: transform 1s ease-out;
+}
+
+.logo path {
+    stroke: var(--primary-dark-grey);
+    stroke-width:0.7px;
+    transition: 1s stroke ease;
 }
 
 .logo circle {
     stroke: var(--primary-dark-grey);
-    stroke-width: 6px;
+    stroke-width: 7px;
     fill: none;
+    transition: 1s stroke ease;
 }
 
+/* not currently used */
 .logo text {
     fill: var(--primary-dark-grey);
     dominant-baseline: middle;
@@ -82,7 +94,10 @@ body {
 
 .logo:hover svg{
     transform: rotate(360deg);
-    transition: 1s ease-out;
+}
+
+.logo:hover path {
+    stroke: var(--primary-light-blue);
 }
 
 .logo:hover text {
@@ -92,7 +107,6 @@ body {
 
 .logo:hover circle {
     stroke: var(--primary-light-blue);
-    transition: 1s stroke ease;
 }
 
 /* NAVIGATION BAR */
@@ -310,6 +324,18 @@ nav.nav_appear {
     padding: 20px 0px;
     position: relative;
     background-image: linear-gradient(black, rgb(60, 60, 60));
+    overflow: hidden;
+}
+
+.footerLogo{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    max-width: 400px;
+    opacity: 0.2;
+    pointer-events: none;
 }
 
 .footer a {
@@ -333,6 +359,7 @@ nav.nav_appear {
     font-size: 16px;
     transform: translateX(-50%);
     color: white;
+    pointer-events: none;
 }
 
 

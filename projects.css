@@ -19,6 +19,10 @@ nav a::after {
     background-color: var(--primary-orange);
 }
 
+.logo path {
+    stroke: white;
+}
+
 .logo circle {
     stroke: white;
 }
@@ -27,14 +31,17 @@ nav a::after {
     fill: white;
 }
 
-.logo:hover text {
-    fill: var(--primary-orange);
+.logo:hover path {
+    stroke: var(--primary-orange);
 }
 
 .logo:hover circle {
     stroke: var(--primary-orange);
 }
 
+.logo:hover text {
+    fill: var(--primary-orange);
+}
 .nav-dropdown {
     background-color: rgb(30, 30, 30);
 }
