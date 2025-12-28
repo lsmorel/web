@@ -12,6 +12,7 @@ nav a.active {
 .line_combo {
     margin: 0;
     padding: 0;
+    /* overflow: hidden; */
 }
 
 .custom_divider {
@@ -24,13 +25,13 @@ nav a.active {
 .right_line,
 .left_line {
     position: absolute;
-    height: 100px;
+    height: 99.5px;
     z-index: -1;
 }
 
 .right_line {
     border-left: 2px solid #000;
-    margin-top: -98px;
+    margin-top: -97.5px;
 }
 
 .left_line {
