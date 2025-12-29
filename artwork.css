@@ -75,7 +75,7 @@ nav a.active {
   overflow: hidden;
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
   transition: box-shadow 0.3s ease-in, transform 0.3s ease-out, width 0.8s ease-out, height 0.8s ease-out, border-radius 0.8s ease-out;
-
+  
   cursor: pointer;
   transform: rotate(0deg);
 }
@@ -291,4 +291,3 @@ nav a.active {
   }
 
 }
-
