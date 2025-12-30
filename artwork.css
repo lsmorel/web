@@ -75,10 +75,9 @@ nav a.active {
   position: relative;
   overflow: hidden;
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-  transition: box-shadow 0.3s ease-in, transform 0.3s ease-out, width 0.8s ease-out, height 0.8s ease-out, border-radius 0.8s ease-out;
-  
   cursor: pointer;
   transform: rotate(0deg);
+  transition: box-shadow 0.3s ease-in, transform 0.3s ease-out, width 0.8s ease-out, height 0.8s ease-out, border-radius 0.8s ease-out;
 }
 
 .slider-img.active {
@@ -88,13 +87,13 @@ nav a.active {
   z-index: 10;
   transform: rotate(-5deg);
   animation: polaroid_border 0.6s forwards;
+  border-color: transparent;
 }
 
 @keyframes polaroid_border {
 
   0% {
-    border-width: 1px;
-    border-color: transparent;
+    border-style: solid;
   }
 
   100% {
@@ -272,8 +271,7 @@ nav a.active {
   @keyframes polaroid_border {
 
     0% {
-      border-width: 1px;
-      border-color: transparent;
+      border-style: solid;
     }
 
     100% {
@@ -281,6 +279,9 @@ nav a.active {
       border-color: rgb(245, 239, 229);
       border-style: solid;
     }
+
+
+
 
   }
 
