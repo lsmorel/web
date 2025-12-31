@@ -282,6 +282,7 @@ nav.nav_appear {
     border-radius: 50%;
     opacity: 0;
     z-index: 304;
+    pointer-events: none;
 }
 
 .animate_circle {
