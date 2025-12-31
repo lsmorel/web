@@ -12,7 +12,6 @@
 
     <title>Home</title>
 
-    
     <!-- hosts nav functions and etc  -->
     <script src="webfunctions.js"></script>
 
@@ -103,67 +102,57 @@
 
         <hr class="divider_big">
 
-        <div class="cardviewImageRight" data-aos="fade-up">
+        <div id="svgContainerID">
+            <div class="cardviewImageRight" >
+                <div style="flex:1;">
+                    <p>Now this is a story of just about how I ended up here with a look and a frown</p>
+                </div>
+                <div style="flex:1; margin-inline: 2%;">
+                    <img id="picId1" class="body_image" src="home_images/babyme.jpg" alt="Baby Me">
+                </div>
+
+            </div>
+                
+            <div class="cardviewImageLeft" >
             <div style="flex:1;">
-                <p>Now this is a story of just about how I ended up here with a look and a frown</p>
+                <p>In the DR I was born and raised then came to the US to better my days</p>
             </div>
-            <div style="flex:1; margin-inline: 2%;">
-                <img id="pic_id" class="body_image" src="home_images/babyme.jpg" alt="Baby Me">
-            </div>
+                <div style="flex:1; margin-inline: 2%;">
+                    <img id="picId2" class="body_image" src="home_images/flightme.jpg" alt="Army">
+                </div>
 
-        </div>
-
-        <div class="line_combo">
-            <div class="right_line"></div>
-            <hr class="custom_divider">
-            <div class="left_line"></div>
-        </div>
-
-        <div class="cardviewImageLeft" data-aos="fade-up">
-<div style="flex:1;">
-            <p>In the DR I was born and raised then came to the US to better my days</p>
-</div>
-            <div style="flex:1; margin-inline: 2%;">
-                <img class="body_image" src="home_images/flightme.jpg" alt="Army">
             </div>
 
-        </div>
 
-        <div class="line_combo reverse">
-            <div class="right_line"></div>
-            <hr class="custom_divider">
-            <div class="left_line"></div>
-        </div>
-
-        <div class="cardviewImageRight" data-aos="fade-up">
-            <div style="flex:1;">
-            <p >I joined the army and my mom got scared and said you better go to college and park your butt on a chair
-            </p>
-        </div>
-
-            <div style="flex:1; margin-inline: 2%;">
-                <img class="body_image" src="home_images/armyme.jpg" alt="Work">
-            </div>
-        </div>
-
-        <div class="line_combo">
-            <div class="right_line"></div>
-            <hr class="custom_divider">
-            <div class="left_line"></div>
-        </div>
-
-        <div class="cardviewImageLeft" data-aos="fade-up">
-            <div style="flex:1;">
-            <p>Now I'm here with a BS in CS and all I need is a job and fresh air</p>
+            <div class="cardviewImageRight" >
+                <div style="flex:1;">
+                <p >I joined the army and my mom got scared and said you better go to college and park your butt on a chair
+                </p>
             </div>
 
-            <div style="flex:1; margin-inline: 2%;">
-                <img class="body_image" src="home_images/schoolme.jpg" alt="School">
+                <div style="flex:1; margin-inline: 2%;">
+                    <img id="picId3" class="body_image" src="home_images/armyme.jpg" alt="Work">
+                </div>
             </div>
 
+            <div class="cardviewImageLeft">
+                <div style="flex:1;">
+                <p>Now I'm here with a BS in CS and all I need is a job and fresh air</p>
+                </div>
+
+                <div style="flex:1; margin-inline: 2%;">
+                    <img id="picId4" class="body_image" src="home_images/schoolme.jpg" alt="School">
+                </div>
+
+            </div>
+            <!-- line svg container -->
+            <svg id="svg-canvas">
+                <path id="pathForLineID" d="" />
+            </svg>
         </div>
 
-    </div>
+
+    </div>     
 
     <div class="footer">        
         <div class="footerLogo">
@@ -187,13 +176,16 @@
     <!-- hosts dynamic lines animations and etc -->
     <script src="home_scripts.js"></script>
     
-    <script>
+   <!-- Removed since fade-up animation interfered with new svg line path implementation.
+    Add 'data-aos="fade-up"' back to cardview divs and uncomment code below to revert this change -->
+    <!-- <script>
+        ...data-aos="fade-up"
         AOS.init({
-            duration: 1000,
+            duration: 0,
             // });
             once: true,
         });
-    </script>
+    </script> -->
 
 </body>
 
