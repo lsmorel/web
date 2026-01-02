@@ -3,12 +3,162 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width"/>
+    <link rel="stylesheet" href="mainstylesheet.css">
     <link rel="icon" type="image/png" href="xp_round_icon.png">
-<title>Placeholder Page</title>
+
+<title>Page Not Found</title>
 </head>
 <body>
-<h1>404 - Page not found</h1>
-<h3>This is just a placeholder page. Go back or go to the home page <a href="home.html">here</a></h3>
+
+    <style>
+        body{
+            min-height: 100vh;
+            background: radial-gradient(
+                circle at center,
+                #253247 0%,
+                #151F31 50%,
+                #10182B 100%
+            );
+
+        }
+
+        h1{
+            text-align: center;
+            margin: 50px 0 10px 0; 
+            color: white;
+            opacity: 0.4;
+            font-size: 10rem;
+            animation: float_animation 5s ease-in-out infinite;
+        }
+        
+        h2{
+            font-weight: 600;
+            font-size: 46px;
+            color: #fff;
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+
+        h4{
+            line-height: 24px;
+            letter-spacing: 0.3px;
+        }
+
+        #container{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            border-radius: 16px;
+            width: 300px;
+            color: rgb(156, 156, 156);
+            transition: opacity 0.6s ease;
+        }
+
+        .home_button{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 260px;
+            height: 50px;
+            border-radius: 50px;
+            background-color: #3a32e1;
+            text-align: center;
+            cursor: pointer;
+            transition: transform 0.6s ease;
+        }
+
+        .home_button a{
+            font-size:larger;
+            color: white;
+            text-decoration: none;
+        }
+
+        .home_button:hover{
+            transform: scale(1.05);
+        }
+
+        .fade{
+            opacity: 0;
+            pointer-events: none;
+        }
+
+        @keyframes float_animation{
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-20px);}
+            100% { transform: translateY(0px); }
+        }
+        .float-animation {
+            animation: float 6s ease-in-out infinite;
+        }
+
+        .bottom_nav{
+            display: flex; 
+            gap:40px; 
+            color:  rgb(156, 156, 156);
+            margin-block: 60px;
+        }
+
+        .bottom_nav a{
+            text-decoration: none;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+            
+        }
+
+        .bottom_nav a:hover{
+            transform: scale(1.1);
+        }
+
+        @media screen  and (max-height: 600px) {
+            .bottomLogo{
+                display: none;
+            }
+        }
+
+    </style>
+
+    <script>
+        function fadeOut(url){
+            document.getElementById("container").classList.add("fade");
+            if(url===1)
+                setTimeout(function() {history.back();},600);
+            else
+                setTimeout(function() {window.location.href=url;},600);
+        }
+    </script>
+
+  
+    <div id="container">
+        <h1>404</h1>
+        <h2>Whoops</h2>
+        <h4>This page does not exist. Please go back or head over to the homepage</h4>
+
+        <div class="home_button" onclick="fadeOut('home.html')">
+            <a>Return to Homepage</a>
+        </div>
+
+        <div class="bottom_nav">
+            <a onclick="fadeOut(1)">Go Back</a>
+            <span style="pointer-events: none;">•</span>
+            <a onclick="fadeOut('https://www.linkedin.com/in/luis-s-morel/')">LinkedIn</a>
+        </div>
+
+        <div class="bottomLogo" style="width: 40px; margin-top: -30px;">
+            <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                <circle stroke="grey" stroke-width="6"; fill="none" cx="100" cy="100" r="93"/>
+                <path stroke="grey" transform="translate(22, 40) scale(11)" fill="none"
+                d="M1.6,2.1 L1.6,8.1 L6,8.1 A1,1 0 0 0 6,6.1 L4.5,6.1 A1,1 0 0 1 4.5,4.1 L7.5,4.1 A1,1 0 0 1 8.5,5.1 L8.5,8.5 L8.5,5.1 A1,1 0 0 1 10.5,5.1 L10.5,8.5 L10.5,5.1 A1,1 0 0 1 12.5,5.1 L12.5,8.5"
+                />
+            </svg>
+        </div>
+    </div>
+
 </body>
 
 </html>
