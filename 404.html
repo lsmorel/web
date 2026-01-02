@@ -83,10 +83,16 @@
             transform: scale(1.05);
         }
 
-        .fade{
-            opacity: 0;
-            pointer-events: none;
+        .fade{            
+            animation: fadeee 0.7s ease forwards;
         }
+
+        @keyframes fadeee {
+             0% { opacity: 1; pointer-events: none; }
+            99% { opacity: 0.01;}
+            100% { opacity: 1; pointer-events: auto; }
+        }
+
 
         @keyframes float_animation{
             0% { transform: translateY(0px); }
