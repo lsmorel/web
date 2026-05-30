@@ -179,6 +179,9 @@ h1 {
     transition: 0.3s;
 }
 
+.footer_content a:hover{
+    color: var(--primary-orange);
+}
 
 /* Tablet-ish view */
 @media (max-width: 800px) {

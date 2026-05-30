@@ -363,6 +363,10 @@ nav.nav_appear {
     max-width: 1200px;
 }
 
+.footer_content a:hover{
+    color: var(--primary-light-blue);
+}
+
 .copyright {
     position: absolute;
     bottom: 20px;

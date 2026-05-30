@@ -66,6 +66,7 @@
                     resume; highlighting who I am as both an engineer and individual. </p>
                     <p class="body_text">My goal is to present myself as a potential 
                     employee and peer to those involved in building high-quality software across all areas of the tech industry.</p>
+                    <div class="skillsLearned"> <span>HTML</span> <span>CSS</span> <span>JavaScript</span></div>
                 <button id="eggButtonId" class="body_button">Find the Easter Egg?</button>
                 <p id="eggTextId" style="display: none; position: absolute; text-align: center; line-height: 1.1;">There's an easter egg 
                     somewhere on my site that when clicked will spin really fast. Try to find it... or not &#128579;</p>
@@ -73,6 +74,25 @@
             </div>
 
         </div>
+
+        <style>
+            .skillsLearned{
+                display: flex;
+                margin-block: 20px;
+                margin: -10px 0 10px 0;
+                gap: 10px;
+            } 
+
+            .skillsLearned span{
+                border: 2px solid var(--primary-orange);
+                border: 1px solid rgb(183, 112, 12);
+                border-radius: 16px;
+                color: var(--primary-orange);
+                color: rgb(183, 112, 12);
+                padding: 6px;
+                /* opacity: 0.8; */
+            }
+        </style>
 
         <div class="body_container" style="flex-direction: row-reverse;">
             <div class="body_div" style="-webkit-box-shadow: 0 0 10px rgba(134, 134, 134, 0.39); box-shadow: 0 0 10px rgba(134, 134, 134, 0.39);" data-aos="fade-up">
@@ -83,7 +103,8 @@
                 <p class="body_text">I worked with a team in an Agile environment on a third-year submarine virtual reality 
                     project. We worked in sprints and documented our progress and tasks on an issue board along the way. The 
                     project concluded with a presentation covering our deliverables and findings from a client survey.</p>
-                <button class="body_button" onclick="window.open(`projects_images/Albacore_Poster.pdf`, '_blank')">Open
+                    <div class="skillsLearned"> <span>C#</span> <span>Unity</span> <span>Agile</span></div>
+                    <button class="body_button" onclick="window.open(`projects_images/Albacore_Poster.pdf`, '_blank')">Open
                     Poster</button>
             </div>
         </div>
@@ -97,6 +118,8 @@
                 <p class="body_text">Currently in development is a mobile travel application which aims to reduce the
                     stress of planning itineraries and simplify the process of organizing travel plans. I will update information on this application
                     as development progresses.</p>
+                <div class="skillsLearned"> <span>Java</span> <span>Google Cloud</span></div>
+                
             </div>
         </div>
 
