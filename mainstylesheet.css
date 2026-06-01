@@ -203,19 +203,24 @@ nav.nav_appear {
 }
 
 .nav-dropdown {
-    display: none;
     position: fixed;
     top: 53px;
     right: 0;
     float: right;
     min-width: 120px;
     border-radius: 0 0 0 5px;
-    animation: kf_nav_expand 0.4s;
+    /* animation: kf_nav_expand 0.4s; */
     z-index: 101;
     box-shadow: 0 4px 6px -4px rgba(0, 0, 0, 0.3);
     background-color: white;
+    height: 0;
+    transition: height 0.4s ease;
+    overflow: hidden;
 }
 
+.openDropNav {
+  height: 128px;
+}
 
 .nav-dropdown a {
     color: var(--primary-dark-grey);

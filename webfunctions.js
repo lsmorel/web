@@ -28,26 +28,19 @@ window.addEventListener('scroll', () => {
 });
 
    function toggleMenu() {
-            let menu = document.getElementById("dropdownID");
-            if (menu.style.display === "block") {
-                menu.style.display = "none";
-            } else {
-                menu.style.display = "block";
-            }
-        }
+    document.getElementById("dropdownID").classList.toggle('openDropNav');
+  }
 
-        //makes the dropdown menu disappear when screen resizes
-        window.addEventListener('resize', () => {
-          if(document.getElementById("dropdownID")){
-            if (document.getElementById("dropdownID").style.display === 'block')
-                document.getElementById("dropdownID").style.display = 'none';
-          }
-        });
+  //makes the dropdown menu disappear when screen resizes
+  window.addEventListener('resize', () => {
+    if(document.getElementById("dropdownID")){
+      document.getElementById("dropdownID").classList.remove('openDropNav')
+    }
+  });
 
-        window.addEventListener('scroll', () => {
-          if(document.getElementById("dropdownID")){
-            if (document.getElementById("dropdownID").style.display === 'block')
-                document.getElementById("dropdownID").style.display = 'none';
-          }
-        });
+  window.addEventListener('scroll', () => {
+    if(document.getElementById("dropdownID")){
+      document.getElementById("dropdownID").classList.remove('openDropNav')
+    }
+  });
 
